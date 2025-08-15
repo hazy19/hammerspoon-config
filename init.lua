@@ -24,7 +24,7 @@ local spaces = require("hs.spaces")
 
 local function isFullscreenWindow(w)
   if not w or not w:isStandard() or not w:isVisible() then return false end
-  if w:isFullScreen() th1en return true end
+  if w:isFullScreen() then return true end
   local ws = spaces.windowSpaces(w)            -- windows -> space IDs
   if ws and ws[1] then
     local t = spaces.spaceType(ws[1])          -- "user" or "fullscreen"
