@@ -110,6 +110,7 @@ local binds = {
   ["'"] = { "com.exafunction.windsurf" }, -- Windsurf
   n = { "org.mozilla.firefox" },
   m = { "com.google.Chrome" },
+  [","] = { "apple.com.Notes" }
 }
 
 for key, bids in pairs(binds) do
