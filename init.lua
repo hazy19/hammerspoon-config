@@ -105,12 +105,15 @@ local binds = {
   h = { "com.microsoft.edgemac" },                                -- Edge
   j = { "com.googlecode.iterm2", "com.apple.Terminal" },          -- iTerm2 → Terminal fallback
   k = { "md.obsidian", "md.Obsidian" },                           -- Obsidian variants
-  l = { "com.openai.chat" },                                     -- Finder
+  l = { "com.apple.finder" },
   [";"] = { "com.microsoft.VSCode" },
   ["'"] = { "com.exafunction.windsurf" }, -- Windsurf
-  n = { "org.mozilla.firefox" },
-  m = { "com.google.Chrome" },
-  [","] = { "com.apple.Notes" }
+  y = { "org.mozilla.firefox" },
+  u = { "com.google.Chrome" },
+  i = { "com.apple.Notes" },
+  o = { "me.proton.pass.electron" },
+  p = { "com.openai.chat" },
+  n = { "com.jetbrains.intellij" },
 }
 
 for key, bids in pairs(binds) do
