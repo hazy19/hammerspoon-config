@@ -102,18 +102,24 @@ hs.hotkey.bind(hyper, "3", function() gotoSpaceN(3) end)
 
 -- Map keys -> apps (Bundle IDs)
 local binds = {
-  h = { "com.microsoft.edgemac" },                                -- Edge
-  j = { "com.googlecode.iterm2", "com.apple.Terminal" },          -- iTerm2 → Terminal fallback
-  k = { "md.obsidian", "md.Obsidian" },                           -- Obsidian variants
-  l = { "com.apple.finder" },
-  [";"] = { "com.microsoft.VSCode" },
-  ["'"] = { "com.exafunction.windsurf" }, -- Windsurf
-  y = { "org.mozilla.firefox" },
-  u = { "com.google.Chrome" },
-  i = { "com.apple.Notes" },
-  o = { "me.proton.pass.electron" },
-  p = { "com.openai.chat" },
-  n = { "com.jetbrains.intellij" },
+  -- browsers plus obsidian plus proton mail
+  y = { "com.microsoft.edgemac" },                                -- Edge
+  u = { "org.mozilla.firefox" },
+  i = { "com.google.Chrome" },
+  o = { "md.obsidian", "md.Obsidian" },
+  p = { "ch.protonmail.desktop" },
+
+
+  -- utilities
+  h = { "com.googlecode.iterm2", "com.apple.Terminal" },          -- iTerm2 → Terminal fallback
+  j = { "com.apple.finder" },
+  k = { "com.apple.Notes" },
+  l = { "com.openai.chat" },
+  [";"] = { "me.proton.pass.electron" },
+
+  n = { "com.microsoft.VSCode" },
+  m = { "com.exafunction.windsurf" }, -- Windsurf
+  ["'"] = { "com.jetbrains.intellij" },
 }
 
 for key, bids in pairs(binds) do
