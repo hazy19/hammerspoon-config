@@ -120,6 +120,7 @@ local binds = {
   n = { "com.microsoft.VSCode" },
   m = { "com.exafunction.windsurf" }, -- Windsurf
   ["'"] = { "com.jetbrains.intellij" },
+  b = { "com.github.GitHubClient" },
 }
 
 for key, bids in pairs(binds) do
